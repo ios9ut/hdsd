@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng Dẫn Sử Dụng Tamlpe Macro Chi Tiết</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: #222;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            transition: background 0.3s;
+        }
+        h1 {
+            font-size: 26px;
+            margin-bottom: 16px;
+            color: #111;
+            line-height: 1.4;
+        }
+        h2 {
+            font-size: 20px;
+            margin: 28px 0 12px;
+            color: #c40000;
+            border-left: 4px solid #c40000;
+            padding-left: 10px;
+        }
+        h3 {
+            font-size: 17px;
+            margin: 20px 0 8px;
+            color: #333;
+        }
+        p {
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+        ul, ol {
+            margin: 0 0 16px 24px;
+        }
+        li {
+            margin-bottom: 6px;
+            font-size: 16px;
+        }
+        .step {
+            background: #f5f5f5;
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin-bottom: 16px;
+            transition: background 0.3s;
+        }
+        .step strong {
+            color: #c40000;
+        }
+        .note {
+            background: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 12px 16px;
+            margin: 20px 0;
+            font-size: 15px;
+            border-radius: 4px;
+        }
+        .rating {
+            margin-top: 30px;
+            padding-top: 16px;
+            border-top: 1px solid #eee;
+            color: #666;
+            font-size: 14px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 12px 0;
+            display: block;
+        }
+        .image-caption {
+            font-size: 13px;
+            color: #888;
+            text-align: center;
+            margin-top: -6px;
+            margin-bottom: 16px;
+        }
+
+        /* ===== Nút chuyển sáng/tối ===== */
+        #themeToggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: none;
+            background: #222;
+            color: #fff;
+            font-size: 22px;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            z-index: 9999;
+            transition: transform 0.2s, background 0.3s;
+        }
+        #themeToggle:hover {
+            transform: scale(1.1);
+        }
+
+        /* ===== Chế độ tối ===== */
+        body.dark {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        body.dark .container {
+            background: #1e1e1e;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        body.dark h1 {
+            color: #f5f5f5;
+        }
+        body.dark h2 {
+            color: #ff6b6b;
+            border-left-color: #ff6b6b;
+        }
+        body.dark h3 {
+            color: #e0e0e0;
+        }
+        body.dark .step {
+            background: #2a2a2a;
+        }
+        body.dark .step strong {
+            color: #ff6b6b;
+        }
+        body.dark .note {
+            background: #2a2418;
+            border-left-color: #ffc107;
+            color: #e0e0e0;
+        }
+        body.dark a {
+            color: #4da6ff;
+        }
+        body.dark .rating {
+            color: #aaa;
+            border-top-color: #333;
+        }
+        body.dark .image-caption {
+            color: #999;
+        }
+        body.dark #themeToggle {
+            background: #f5f5f5;
+            color: #222;
+        }
+    </style>
+</head>
+<body>
+    <button id="themeToggle" title="Chuyển chế độ sáng/tối">🌙</button>
+
+    <div class="container">
+        <h1>Tính Năng Và Cách Sử Dụng TamlpeMacro</h1>
+
+        <h2>Cấp Quyền, Giao Diện và Nút</h2>
+
+        <div class="step">
+            <p><strong>1.Tải <a href="https://link4m.org/nsYcu2q" target="_blank">Tamlpe Macro</a></strong></p>
+            <ul>
+                <li><a href="https://link4m.org/nsYcu2q" target="_blank">Ấn Vào Đây</a> để tải Tamlpe Macro (hoặc ấn vào tiêu đề trên)</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <p><strong>2. Sau khi tải xong, app sẽ yêu cầu quyền trợ năng</strong></p>
+            <ul>
+                <li>Trong mục <strong>Hỗ Trợ Tiếp Cận</strong> hoặc <strong>Accessibility</strong> chọn MacroAuto.</li>
+                <img src="b1.jpg" alt="Chọn MacroAuto">
+                <li>Bật và cấp quyền cho ứng dụng</li>
+                <img src="b2.jpg" alt="Cấp Quyền">
+            </ul>
+        </div>
+
+        <div class="step">
+            <p><strong>3. Sau đó app sẽ yêu cầu quyền hiển thị</strong></p>
+            <ul>
+                <li>Tìm MacroAuto trong mục <strong>Hiển thị trên các ứng dụng</strong> hoặc <strong>Overlay</strong></li>
+                <img src="b3.jpg" alt="Chọn">
+                <li>Bật và cấp quyền cho ứng dụng</li>
+                <img src="b4.jpg" alt="Cấp Quyền">
+            </ul>
+        </div>
+
+        <img src="b5.jpg" alt="Giao Diện">
+        <p class="image-caption">Đây là giao diện ứng dụng sau khi vào.</p>
+
+        <div class="step">
+            <p><strong>4. Chức Năng Các Nút</strong></p>
+            <ul>
+                <li>Tạo Macro : Thiết lập 1 macro mới tuỳ chỉnh</li>
+                <li>Độ To Nút Kích Hoạt : Độ to của nút kích hoạt sau khi các bạn tạo thành công 1 macro</li>
+                <li>Xuất Macro : Xuất file config của macro ra thư mục</li>
+                <li>Nhập Macro : Nhập file config của macro từ thư mục (có thể dùng để backup khi app cập nhật)</li>
+                <li>Danh sách Macro : Những config mà anh em đã tạo</li>
+                <li>Một Macro sẽ có 3 nút chính. Nút Tam giác là Bật hotkey + kích hoạt macro, cây bút là chỉnh sửa macro, thùng rác là xoá macro</li>
+            </ul>
+        </div>
+
+        <h2>Thiết Lập Thao Tác, Chức Năng</h2>
+
+        <div class="step">
+            <p><strong>Thiết Lập Macro</strong></p>
+            <ul>
+                <li>Sau khi ấn vào tạo macro, sẽ có 1 Gui hiện lên như này :</li>
+                <img src="b6.jpg" alt="Giao Diện">
+                <li>Dấu Cộng : Thêm điểm click</li>
+                <li>Dấu Trừ : Bỏ điểm click gần nhất mới thêm</li>
+                <li>Xong : Thiết lập xong và muốn lưu</li>
+                <li>Kéo : Di chuyển Gui</li>
+                <li>Hãy Thiết lập macro theo đúng ý của anh em</li>
+                <img src="b7.jpg" alt="Thiết Lập">
+            </ul>
+        </div>
+
+        <div class="step">
+            <p><strong>Chức năng điểm click, lưu Config</strong></p>
+            <ul>
+                <li>Delay : Ấn giữ vào điểm anh em muốn set Delay, sau đó điền số và ấn OK.</li>
+                <li>Delay tức là số giây sẽ chờ để click điểm tiếp theo</li>
+                <img src="b8.jpg" alt="Delay Setting">
+            </ul>
+        </div>
+
+        <img src="b9.jpg" alt="Lưu Macro">
+        <p class="image-caption">Sau khi thiết lập xong, ấn OK, Cấu Hình Macro sẽ được lưu vào máy.</p>
+
+        <div class="step">
+            <p><strong>Chức năng Hotkey</strong></p>
+            <ul>
+                <li>Sau Khi Lưu, màn hình điện thoại sẽ hiện lên nút hotkey :</li>
+                <img src="b10.jpg" alt="Hotkey">
+                <li>Giữ vào mép dưới nút và di chuyển để di chuyển nút (ấn ở trên sẽ lỗi)</li>
+                <li>Giữ vào mép dưới nút 0,7 giây để Xoá nút (xoá nút chứ ko xoá macro)</li>
+                <img src="b11.jpg" alt="Chức Năng Hotkey">
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const btn = document.getElementById("themeToggle");
+        const body = document.body;
+
+        // Nhớ theme đã chọn lần trước
+        if (localStorage.getItem("theme") === "dark") {
+            body.classList.add("dark");
+            btn.textContent = "☀️";
+        }
+
+        btn.addEventListener("click", () => {
+            body.classList.toggle("dark");
+            const isDark = body.classList.contains("dark");
+            btn.textContent = isDark ? "☀️" : "🌙";
+            localStorage.setItem("theme", isDark ? "dark" : "light");
+        });
+    </script>
+</body>
+</html>
